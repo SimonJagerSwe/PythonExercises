@@ -9,11 +9,11 @@ if len(card_number) != 16:
 def number_hider():
     first_12 = card_number[:12]
     # print(first_12)
-    hidden_numbers = []
-    for num in first_12:
-        if num in numbers_list:
-            hidden_numbers.append(num)
-    hidden_numbers.replace(num, 'X')
-    print(hidden_numbers)
+    final_4 = card_number[12:]
+    # print(final_4)
+    hidden_12 = len(first_12) * 'X'
+    # print(hidden_12)    
+    final_numbers = str(hidden_12 + final_4)
+    print(final_numbers)
 
 number_hider()
