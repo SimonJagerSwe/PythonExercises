@@ -15,3 +15,14 @@ def multiplication():
 def division():
     return int_a / int_b
 
+if operator == '+':
+    print(addition())
+
+elif operator == '-':
+    print(subtraction())
+
+elif operator == '*':
+    print(multiplication())
+
+elif operator == '/':
+    print(division())
